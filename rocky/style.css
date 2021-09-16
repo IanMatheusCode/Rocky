@@ -1,0 +1,564 @@
+/******************************************
+IMPORTANTE ROCKY 
+******************************************/
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("fonts/Flaticon.eot");
+    src: url("fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("fonts/Flaticon.woff") format("woff"), url("fonts/Flaticon.ttf") format("truetype"), url("fonts/Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("fonts/Flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style: normal;
+}
+
+
+/******************************************
+ESQUELETO ROCKY
+******************************************/
+
+body {
+    background-image: url(images/fundo.png);
+    line-height: 1.6;
+    font-size: 16px;
+    color: #a2a2a2;
+}
+
+body,
+p,
+li,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.course-details h4 a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+}
+
+.logo-menu {
+    display: inline-block
+}
+
+
+.authorbox,
+blockquote {
+    border: 0;
+    margin: 30px 0;
+    position: relative;
+    padding: 4rem 3rem;
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    border: 1px solid #eaeaea;
+    background-color: #f6f6f6;
+}
+
+blockquote:after {
+    content: "\f10e";
+    padding: 5px;
+    font-family: FontAwesome;
+    position: absolute;
+    bottom: 0px;
+    color: #f6f6f6;
+    font-size: 24px;
+    right: 10px;
+}
+
+blockquote:before {
+    content: "\f10d";
+    padding: 5px;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    color: #f6f6f6;
+    font-size: 24px;
+    left: 10px;
+}
+
+
+/******************************************
+CABEÇALHO
+******************************************/
+
+.topbar a,
+.topbar p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.topbar .text-left p {
+    margin-top: 3px;
+}
+
+.topbar .text-left i {
+    padding-right: 3px;
+}
+
+.header {
+    position: absolute;
+    z-index: 111;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.header.without-topbar {
+    padding: 30px 0;
+}
+
+.header-normal {
+    position: relative;
+    padding: 0 0 18px;
+    background-color: #fff;
+}
+
+.header-normal .navbar-default .nav>li>a {
+    color: #848484 !important;
+}
+
+.header.affix {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #000;
+    left: 0;
+    padding: 15px 0;
+    right: 0,
+}
+
+.header.header-normal.affix {
+    background-color: #ffffff;
+}
+
+.header.affix .topbar {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.navbar-default {
+    margin: 0;
+    background-color: transparent;
+    background: none;
+    border: 0;
+}
+
+.navbar-default .nav>li>a {
+    color: #fff !important;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar-nav .has-submenu .dropdown-menu li a {
+    padding: 14px 20px;
+}
+
+.navbar-default .dropdown-menu {
+    box-shadow: none;
+}
+
+.navbar-default .dropdown-menu li a {
+    color: #222;
+    font-size: 14px;
+}
+
+.navbar-default .fa-angle-right {
+    position: absolute;
+    right: 30px;
+}
+
+.navbar-brand img {
+    margin: 0 !important;
+}
+
+
+.modal-header {
+    border-bottom: 0;
+    padding: 15px;
+    background: none;
+}
+
+
+/******************************************
+ESCRITA PAGINA INICIAL ROCKY
+******************************************/
+
+.event-section {
+    height: 100vh;
+    height: 100%;
+    padding: 30rem 0;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.text-widget h3,
+.section-title h3 {
+    margin: 0 0 25px;
+    padding: 0;
+    line-height: 1;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-title p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+}
+
+.section.gb {
+    background-color: #f6f6f6;
+}
+
+.section.db {
+    background-color: #000000;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.video-section {
+    position: relative;
+}
+
+.slider-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 3px;
+    z-index: 11;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.slider-bottom i {
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.home-text-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    position: relative;
+    text-align: center;
+    z-index: 11;
+}
+
+.home-content {
+    position: relative;
+}
+
+.home-message {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.home-message2 p {
+    font-size: 60px;
+}
+
+.home-message p {
+    font-size: 75px;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-weight: 1000;
+}
+
+.home-message small {
+    font-size: 16px;
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    display: block;
+    padding: 20px 0 35px;
+    margin: 0;
+    color: #f6f6f6
+}
+
+.nopadtop {
+    padding-top: 0 !important;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 4rem;
+    position: relative;
+    z-index: 11;
+}
+
+.box p {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.box i {
+    margin-bottom: 30px;
+    display: inline-block;
+    line-height: 1;
+    font-size: 46px
+}
+
+.box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.m30 {
+    margin-top: -60px;
+}
+
+
+
+/******************************************
+BUTAO MENU ROCKY
+******************************************/
+
+.btn {
+    border-radius: 0;
+    font-size: 14px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    color: #ffffff !important;
+    padding: 13px 40px;
+    text-transform: capitalize;
+}
+
+.btn-transparent {
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+
+
+/******************************************
+COR AZUL ROCKY BOTÃO
+******************************************/
+
+.yamm .dropdown .dropdown-menu {
+    border-top-color: #01bacf;
+}
+
+.cb,
+.box 
+.pagination a,
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover,
+.tags-widget a,
+.owl-theme-01 .owl-nav [class*="owl-"]:hover,
+.yamm .dropdown-menu li:hover .menu-button,
+.yamm .dropdown-menu li .menu-button,
+mark,
+.bgcolor1,
+.image-wrap:before,
+.image-wrap:after,
+.btn-primary {
+    border-color: #01bacf;
+    background-color: #01bacf;
+    box-shadow: inset 0 0 0 0 #00a8bd;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.pagination a:hover,
+.tags-widget a:hover,
+.btn-primary:hover {
+    color: #ffffff !important;
+    box-shadow: inset 0 100px 0 0 #00a8bd;
+    border-color: #00a8bd;
+}
+
+
+/******************************************
+RESPONSIVO ROCKY
+******************************************/
+
+@media (max-width: 992px) {
+    .p120 {
+        padding-bottom: 8rem !important;
+    }
+    .boxed {
+        margin-top: 4rem;
+    }
+    .blog-box,
+    .testimonial,
+    .stat-count {
+        margin: 30px 0;
+    }
+    .m30 {
+        margin-top: 30px;
+    }
+    .absolute-widget {
+        background-image: none;
+    }
+    .sidebar {
+        margin-top: 30px;
+    }
+    .container {
+        min-width: 100% !important;
+    }
+    .footer .widget {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-extra .nav-tabs>li>a,
+    .shop-extra .nav-tabs>li {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .shop-extra {
+        padding: 30px 10px;
+    }
+    .home-message p {
+        font-size: 28px;
+    }
+    .topbar .text-left {
+        text-align: center;
+    }
+    .authorbox img {
+        float: none;
+        margin: 0 0 30px !important;
+        min-width: 100px;
+    }
+    .media-left,
+    .media>.pull-left {
+        display: block;
+        float: none;
+        margin: 0 0 30px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 468px) {
+    .blog-meta h3 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .yamm-fw {
+        position: relative;
+    }
+    .hassubmenu:hover>ul,
+    .yamm-fw:hover>ul {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+    }
+    .hassubmenu ul,
+    .navbar-nav .yamm-fw ul {
+        -webkit-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -moz-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -o-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+    }
+    .yamm-fw .dropdown-menu {
+        min-width: 240px;
+        padding: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .hassubmenu>ul,
+    .yamm-fw>ul {
+        position: absolute;
+        top: 160%;
+        visibility: hidden;
+        display: block;
+        opacity: 0;
+    }
+    .yamm-fw>ul li {
+        position: relative;
+    }
+    .yamm-fw>ul li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+        left: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav>li>a {
+        padding: 1em 0.7em;
+    }
+}
